@@ -37,6 +37,7 @@ public class Bullet : MonoBehaviour
         {
             //当たったオブジェクトのEnemyのスクリプトを呼び出してDamage関数を実行する
             other.GetComponent<Enemy>().Damage();
+            Destroy(this.gameObject);
         }
     }
 
